@@ -26,7 +26,7 @@ int print_str(va_list ap)
 			i++;
 		}
 	}
-	
+
 	return (i);
 }
 
@@ -35,20 +35,4 @@ int print_percent(__attribute__((unused)) va_list ap)
 	_putchar('%');
 	return (1);
 }
-/*
-int print_nums(va_list ap)
-{
-	int n, chk, ln;
-	unsigned int no;
 
-	n = va_arg(ap, int);
-	chk = 1;
-	ln = 0;
-*/
-int print_ints(va_list ap)
-{
-	int n;
-
-	n = print_nums(ap);
-	return (n);
-}

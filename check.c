@@ -49,4 +49,4 @@ int check(const char *format, cast_t funcs[], va_list ap)
 	}
 
 	return (pc);
-
+}
