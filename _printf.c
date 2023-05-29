@@ -9,6 +9,8 @@ int _printf(const char *format, ...)
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_percent},
+		{"d", print_ints},
+		{"i", print_ints},
 		{NULL, NULL}
 	};
 

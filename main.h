@@ -3,7 +3,6 @@
 
 #include <stdarg.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 struct cast
 {
@@ -17,7 +16,9 @@ int check(const char *format, cast_t funcs[], va_list ap);
 int print_char(va_list);
 int print_str(va_list ap);
 int print_percent(va_list);
+
 int print_nums(va_list ap);
 int print_ints(va_list ap);
+int print_unsigned(unsigned int n);
 
 #endif
