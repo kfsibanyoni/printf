@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+  *print_char: - print a character
+  *
+  *@ap: agrument to be printed
+  *
+  *Return: Number of characters printed
+  */
+
 int print_char(va_list ap)
 {
 	char val;
@@ -9,6 +17,13 @@ int print_char(va_list ap)
 	return (1);
 }
 
+/**
+  *print_str - prints a string
+  *
+  *@ap: agruments
+  *
+  *Return: numbers of character printed
+  */
 int print_str(va_list ap)
 {
 	const char *s;
@@ -29,13 +44,24 @@ int print_str(va_list ap)
 
 	return (i);
 }
-
+/**
+  *print_percent - Prints a percentage sign
+  *
+  *ap: arguments to be printed
+  *
+  *Return: prints the char percent sign
+  */
 int print_percent(__attribute__((unused)) va_list ap)
 {
 	_putchar('%');
 	return (1);
 }
-
+/**
+  *print_nums - helper function that loops through
+  *an integer and prints all its digitd
+  *@ap: lists agruments to be printed
+  *Reutrn: ln
+  */
 int print_nums(va_list ap)
 {
 	int n, chk, ln;
@@ -63,33 +89,4 @@ int print_nums(va_list ap)
 	}
 
 	return (ln);
-}
-
-int print_unsigned(unsigned int n)
-{
-	int c = 1;
-	int l = 0;
-	unsigned int no;
-
-	no = n;
-	
-	for (; no / c > 9; )
-                c *= 10;
-
-        for (; c != '\0'; )
-        {
-                l += _putchar('0' + no / c);
-                no %= c;
-                c /= 10;
-        }
-
-        return (l);
-}
-
-int print_ints(va_list ap)
-{
-	int n;
-
-	n = print_nums(ap);
-	return (n);
 }

@@ -1,11 +1,18 @@
 #include "main.h"
 #include <stdint.h>
 
+/**
+  *_printf - produces output according to a format
+  *
+  * @format: is a character string
+  *
+  *Return: the number of characters printed
+  */
+
 int _printf(const char *format, ...)
 {
 	int pc;
-	cast_t funcs[] = 
-	{
+	cast_t funcs[] = {
 		{"c", print_char},
 		{"s", print_str},
 		{"%", print_percent},
