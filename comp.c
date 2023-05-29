@@ -26,7 +26,7 @@ int print_str(va_list ap)
 			i++;
 		}
 	}
-	
+
 	return (i);
 }
 
@@ -35,6 +35,7 @@ int print_percent(__attribute__((unused)) va_list ap)
 	_putchar('%');
 	return (1);
 }
+<<<<<<< HEAD
 
 int print_nums(va_list ap)
 {
@@ -73,3 +74,6 @@ int print_ints(va_list ap)
 	return (n);
 }
 
+=======
+
+>>>>>>> 99ec3456d667d903554bb88af1d1e8284eb01c4f
