@@ -20,6 +20,7 @@ int _printf(const char *format, ...)
 		{"i", print_ints},
 		{"r", print_rev},
 		{"R", print_rot13},
+		{"b", print_binary}
 		{NULL, NULL}
 	};
 

@@ -72,6 +72,12 @@ Write a function that produces output according to a format.
 * d
 * i
 
+### 2. With a face like mine, I do better in print
+
+- Handle the following custom conversion specifiers:
+
+* b: the unsigned int argument is converted to binary
+
 ### 13. Print is the sharpest and the strongest weapon of our party
 
 Handle the following custom conversion specifier:

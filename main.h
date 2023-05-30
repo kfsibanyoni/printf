@@ -30,5 +30,7 @@ int print_ints(va_list ap);
 int print_unsigned(unsigned int n);
 
 int print_rot13(va_list list);
+int print_binary(va_list ap);
+
 
 #endif
