@@ -15,6 +15,8 @@ int _putchar(char c);
 int check(const char *format, cast_t funcs[], va_list ap);
 int print_char(va_list);
 int print_str(va_list ap);
+int _strlen(char *s);
+int _strlenc(const char *s);
 int print_percent(va_list);
 
 int print_nums(va_list ap);

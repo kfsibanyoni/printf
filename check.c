@@ -1,14 +1,22 @@
 #include "main.h"
 
+/**
+ * check - works with compiler to parse functions
+ *
+ * @format: string
+ * @funcs: array of characters
+ * @ap: arguments to pass through
+ *
+ * Return: converted characters
+ */
 int check(const char *format, cast_t funcs[], va_list ap)
 {
 	/* v - value, pc -print characters */
 	int i, j, val, pc;
 
-	i = 0;
 	pc = 0;
 	/* go thru main str */
-	while (format[i] != '\0')
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		/* check format specifier */
 		if (format[i] == '%')
@@ -45,7 +53,6 @@ int check(const char *format, cast_t funcs[], va_list ap)
 			_putchar(format[i]);
 			pc++;
 		}
-		i++;
 	}
 
 	return (pc);
