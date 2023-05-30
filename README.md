@@ -7,12 +7,12 @@ A program for converting fromatted output in C. The program emulates the C stand
 
 
 
-What one should lean from the prject:
+What one should learn from the prject:
 
 * How to use git in a team setting.
 * Applying function that we have learned up to this far
 * The complexities of printf function
-* Finding a good workflow and spliting thw work into equal but manageable parts
+* Finding a good workflow and spliting the work into equal but manageable parts
 
 ---
 
@@ -72,20 +72,19 @@ Write a function that produces output according to a format.
 * d
 * i
 
-### 2. With a face like mine, I do better in print
+### 13. Print is the sharpest and the strongest weapon of our party
 
-Handle the following custom conversion specifiers:
+Handle the following custom conversion specifier:
 
-* b: the unsigned int argument is converted to binary
+* r : prints the reversed string
 
-### 3. What one has not experienced, one will never understand in print
 
-Handle the following conversion specifiers:
+### 14. The flood of print has turned reading into a process of gulping rather than savoring
 
-* u
-* o
-* x
-* X
+Handle the following custom conversion specifier:
+
+* R: prints the rot13'ed string
+
 
 ---
 
