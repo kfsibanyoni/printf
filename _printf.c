@@ -18,6 +18,8 @@ int _printf(const char *format, ...)
 		{"%", print_percent},
 		{"d", print_ints},
 		{"i", print_ints},
+		{"r", print_rev},
+		{"R", print_rot13},
 		{NULL, NULL}
 	};
 
